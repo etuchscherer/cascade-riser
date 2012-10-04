@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cascade</title>
+  <title>Cascade Riser Management</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" lang="en" content="Seattle Cabling, wiring, data, cabling, voice, ds3, t1, dsl, cat5, cat6, video, contractor, fiber, optic, communications, cascade, vantage, cochran, services, structured cabling, cat5e, coax, cable, seattle, bellevue, washington, puget, sound">
+  <meta name="google-site-verification" content="d8KYCkPS5nary2YWpfRmHKgW_cGyrNWtgdrr3rOabk8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">Cascade Riser Management</a>
+      <ul class="nav">
+        <li class="<%= 'active' if params[:action] == 'index' %>"><%= link_to "Home", "/" %></li>
+        <li class="<%= 'active' if params[:action] == 'services' %>"><%= link_to "Services", "/services" %><li>
+        <li class="<%= 'active' if params[:action] == 'contact' %>"><%= link_to "Contact", "/contact" %></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<%= yield %>
+<div class="container">
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <p>customer service: 206.396.6864</p>
+    </div>
+    <div class="span4">
+      <p>fax: 800.537.9459</p>
+    </div>
+    <div class="span4">
+      <p>email: service@cascaderisermanagement.com</p>
+    </div>
+</div>
 
+</div>
 </body>
 </html>

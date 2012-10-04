@@ -1,4 +1,10 @@
 Cascade::Application.routes.draw do
+  match "/contact" => "static#contact"
+
+  match "/services" => "static#services"
+
+  match "/" => "static#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
