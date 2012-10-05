@@ -19,6 +19,14 @@ body {
 
 // Font Awesome
 @import "fontawesome";
+@cascade-blue: #1A70B2;
+@navbarBackgroundHighlight: lighten(@cascade-blue, 25%);
+@navbarBackground: @cascade-blue;
+@navbarLinkColor : #FAFAFA;
+@navbarLinkColorHover: white;
+@navbarLinkColorActive: white;
+@navbarLinkBackgroundHover: darken(@cascade-blue, 5%);
+@navbarLinkBackgroundActive: darken(@cascade-blue, 8%);
 
 // Your custom LESS stylesheets goes here
 //
@@ -40,5 +48,24 @@ div.footer {
 }
 
 div.footer dl.dl-horizontal dt {
-  color: #1A70B2;
+  color: @cascade-blue; 
+}
+
+@font-face {
+  font-family: 'bankGothic';
+  src: url('/assets/bankgthl.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+ font-family: bankGothic;
+}
+
+li {
+  line-height: 30px;
+}
+
+img.biglogo {
+  height: 300px;
 }
