@@ -12,16 +12,7 @@
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="#"><img src="/img/logo.png"></a>
-      <ul class="nav pull-right">
-        <li class="<%= 'active' if params[:action] == 'index' %>"><%= link_to "Home", "/" %></li>
-        <li class="<%= 'active' if params[:action] == 'services' %>"><%= link_to "Services", "/services" %><li>
-        <li class="<%= 'active' if params[:action] == 'contact' %>"><%= link_to "Contact", "/contact" %></li>
-      </ul>
-    </div>
-  </div>
+<%= render "layouts/header" %>
 </div>
 
 <div class="container">
